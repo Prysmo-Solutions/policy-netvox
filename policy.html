@@ -1,19 +1,19 @@
 <div id="policy-popup">
     <div class="policy-container">
         <h1>Politicas de privacidad</h1>
-        <p>1 OBJETIVO El objetivo de la presente Política es dar a conocer los lineamientos bajo los cuales NETVOX
+        <p class="politicas"><b>1 OBJETIVO:</b> El objetivo de la presente Política es dar a conocer los lineamientos bajo los cuales NETVOX
             realiza el tratamiento de los datos personales, la finalidad para la que lo hace, así como los
             procedimientos mediante los cuales los titulares de los mismos podrán ejercer los derechos de acceso,
-            rectificación, cancelación y oposición.
-            2 ALCANCE La presente Política se aplica a todo el tratamiento y transferencia de datos personales que
+            rectificación, cancelación y oposición.<br>
+            <b>2 ALCANCE:</b> La presente Política se aplica a todo el tratamiento y transferencia de datos personales que
             efectúa NETVOX y a aquellas personas a las que NETVOX requiera el tratamiento de datos personales de los
-            cuales sea responsable.
-            3 LEGISLACIÓN Esta política está regulada por la Legislación peruana y en particular por Ley N°29733 – Ley
-            de Protección de Datos Personales, según Decreto Supremo N° 003-2013-JUS-Reglamento de la Ley N° 29733.
-            4 PRINCIPIOS NETVOX se compromete a respetar los principios rectores establecidos en la Ley N° 29733 – Ley
+            cuales sea responsable.<br>
+            <b>3 LEGISLACIÓN:</b> Esta política está regulada por la Legislación peruana y en particular por Ley N°29733 – Ley
+            de Protección de Datos Personales, según Decreto Supremo N° 003-2013-JUS-Reglamento de la Ley N° 29733.<br>
+            <b>4 PRINCIPIOS:</b> NETVOX se compromete a respetar los principios rectores establecidos en la Ley N° 29733 – Ley
             de Protección de Datos Personales, los cuales son los Principios de Legalidad, Consentimiento, Finalidad,
-            Proporcionalidad, Calidad, Seguridad, Disposición de Recurso y el Principio de Nivel de Protección Adecuado.
-            5 FINALIDAD DE TRATAMIENTO DE LOS DATOS PERSONALES
+            Proporcionalidad, Calidad, Seguridad, Disposición de Recurso y el Principio de Nivel de Protección Adecuado.<br>
+            <b>5 FINALIDAD DE TRATAMIENTO DE LOS DATOS PERSONALES</b><br>
             5.1 Finalidad del tratamiento de datos de sus clientes. NETVOX podrá llevar a cabo el tratamiento de los
             datos personales de sus clientes, con el propósito de prestar los servicios contratados o solicitados y
             mantener activa su cuenta virtual hasta el cese del contrato. Los contratos que se celebren con los clientes
@@ -30,11 +30,11 @@
             comunicación, publicidad, ofrecimiento de servicios y/o productos propios distintos a los contratados. Por
             tal motivo, todas las comunicaciones efectuadas por NETVOX no constituyen SPAM según la Ley N° 28493, su
             reglamento y modificatorias. De no otorgar su consentimiento, NETVOX no podrá comunicarle las ventajas y
-            beneficios de todos sus servicios o productos.
+            beneficios de todos sus servicios o productos.<br>
             5.2 La finalidad del tratamiento de datos de sus proveedores NETVOX llevará a cabo el tratamiento de los
             datos personales de sus proveedores , con la finalidad de cumplir con las obligaciones adquiridas en virtud
             de la respectiva relación contractual que tenga con éstos y/o poder ejercer acciones legales, de ser el
-            caso.
+            caso.<br>
             5.2.1 Derechos de los titulares. Derecho de Acceso e Información: El titular de datos personales tiene
             derecho a obtener la información que sobre si mismo sea objeto de tratamiento en los bancos de datos de
             NETVOX. Derecho de actualización, rectificación, inclusión, supresión o cancelación. El titular de datos
@@ -52,25 +52,25 @@
             contractuales entre el responsable y el titular de los datos personales que justifiquen el tratamiento de
             los mismos.
             Revocatoria del consentimiento: El titular de datos personales podrá revocar el consentimiento que hubiere
-            otorgado, enviando un correo electrónico a la siguiente dirección: malmeidar@netvoxperu.com.
+            otorgado, enviando un correo electrónico a la siguiente dirección: malmeidar@netvoxperu.com.<br>
             5.3 Seguridad NETVOX se compromete a adoptar las instrucciones que imparta la Autoridad Nacional de
             Protección de Datos Personales. No obstante, lo anterior NETVOX declara que posee procedimientos de
             seguridad de la información que protege de manera razonable los datos personales almacenados en su banco de
             datos, limitando el acceso a terceros en la medida de lo posible. Asimismo, NETVOX se compromete a instruir
             a sus trabajadores y/o colaboradores a guardar confidencialidad respecto de los datos personales a los que
-            tuvieran acceso.
+            tuvieran acceso.<br>
             5.4 CUESTIONARIOS Y FORMULARIOS La página web podrá contener diversos cuestionarios de carácter obligatorio
             y voluntario, según la indicación que conste en los mismo. Las preguntas son de carácter obligatorio, salvo
             que en el propio formulario conste expresamente lo contrario. Estos formularios también se podrán presentar
             en formato físico, siéndoles de aplicación la misma regla que a los formatos virtuales. Al rellenar un
             cuestionario, se entiende otorgado el consentimiento para que NETVOX trate sus datos personales, salvo que
-            se especifique en el mismo lo contrario.
+            se especifique en el mismo lo contrario.<br>
             5.5 VIGENCIA Y MODIFICACIÓN La Política de Privacidad de NETVOX ha sido actualizada al 20 de Junio del 2022.
             NETVOX se reserva el derecho de modificar su Política cuando lo considere necesario.
         </p>
         <div class="botones-container">
-            <button id="acceptButton">Acepto</button>
-            <button id="cancelButton">No acepto</button>
+            <button class="accept" id="acceptButton">Acepto</button>
+            <button class="decline" id="cancelButton">No acepto</button>
         </div>
         <style>
             #policy-popup {
@@ -110,6 +110,50 @@
             .botones-container>button {
                 padding: 1rem 2rem;
             }
+            .accept{
+                position: relative;
+                display: inline-block;
+                padding: 15px 20px;
+                margin: 0;
+                min-height: 52px;
+                width: 50%;
+                border: 0;
+                border-radius: 4px;
+                background: #14578D;
+                box-shadow: 0px 9.35068px 0px #14578D;
+                font-family: 'Satoshi';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 57px;
+                color: #ffffff;
+                outline: 0;
+                cursor: pointer;
+                transition: all .2s ease;
+            }
+
+            .decline{
+                position: relative;
+                display: inline-block;
+                padding: 15px 20px;
+                margin: 0;
+                min-height: 52px;
+                width: 50%;
+                border: 0;
+                border-radius: 4px;
+                background: #FF4F1F;
+                box-shadow: 0px 9.35068px 0px #FF4F1F;
+                font-family: 'Satoshi';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                color: #FFFFFF;
+                line-height: 57px;
+                outline: 0;
+                cursor: pointer;
+                transition: all .2s ease;
+            }
+
         </style>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
