@@ -10,7 +10,7 @@
 
 <body>
     <div id="policy-popup">
-        <div class="policy-container">
+        <div id="policy-container" class="policy-container">
             <h1>Politicas de privacidad</h1>
             <p class="politicas"><b>1 OBJETIVO:</b> El objetivo de la presente Política es dar a conocer los
                 lineamientos
@@ -216,14 +216,17 @@
                     const idPopUp = "policy-popup",
                         idAcpBtn = "acceptButton",
                         idCnclBtn = "cancelButton",
-                        $policyContainer = document.querySelector(".policy-container"),
+                        $policyContainer = document.getElementById("policy-container"),
                         $acceptBtn = document.getElementById(idAcpBtn),
                         $cancelBtn = document.getElementById(idCnclBtn),
                         $containerPopUp = document.getElementById("policy-popup")
-                    $policyContainer.addEventListener("blur", () => {
+                    $containerPopUp.addEventListener("click", (e) => {
                         //aqui se esconde el popup
-                        $containerPopUp.style.transform = "translateY(100%)"
-                        document.getElementById("form-field-privacidad").checked = false
+                        if (e.target.id === "policy-popup") {
+                            console.log("blur")
+                            $containerPopUp.style.transform = "translateY(100%)"
+                            document.getElementById("form-field-privacidad").checked = false
+                        }
                     })
                     document.getElementById("form-field-privacidad").addEventListener("click", () => {
                         $containerPopUp.style.transform = "translateY(0)"
